@@ -56,8 +56,19 @@ namespace G_NET_42_LINQ_1
             }
 
             #endregion
-            #region Q3
+            #region Q6
+            var productInfo = Source.ProductList
+                .Select(p => new
+                {
+                    Name = p.ProductName,
+                    Price = p.UnitPrice,
+                    StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+                });
 
+            foreach (var item in productInfo)
+            {
+                Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, Status: {item.StockStatus}");
+            }
             #endregion
             #region Q3
 
