@@ -93,8 +93,15 @@ namespace G_NET_42_LINQ_1
                 Console.WriteLine($"Category: {product.Category}, Name: {product.ProductName}, Price: {product.UnitPrice}");
             }
             #endregion
-            #region Q3
+            #region Q9
+            var beveragesSortedByStock = Source.ProductList
+                .Where(p => p.Category == "Beverages")
+                .OrderByDescending(p => p.UnitsInStock);
 
+            foreach (var product in beveragesSortedByStock)
+            {
+                Console.WriteLine($"Name: {product.ProductName}, Stock: {product.UnitsInStock}");
+            }
             #endregion
             #region Q3
 
