@@ -26,6 +26,128 @@ namespace G_NET_42_LINQ_1
                 Console.WriteLine(name);
             }
             #endregion
+            #region Q3
+            var sortedByPrice = Source.ProductList
+                 .OrderBy(p => p.UnitPrice);
+
+            foreach (var product in sortedByPrice)
+            {
+                Console.WriteLine($"Name: {product.ProductName}, Price: {product.UnitPrice}");
+            }
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            var#region Q3
+
+            #endregion
+                
+                #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+            #region Q3
+
+            #endregion
+               
+                #region Q3
+
+            #endregion
+               
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+                #region Q3
+
+            #endregion
+
         }
     }
 }
