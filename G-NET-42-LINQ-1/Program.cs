@@ -46,7 +46,14 @@ namespace G_NET_42_LINQ_1
             }
 
             #endregion
-            #region Q3
+            #region Q5
+            var condimentsInStock = Source.ProductList
+                 .Where(p => p.UnitsInStock > 0 && p.Category == "Condiments");
+
+            foreach (var product in condimentsInStock)
+            {
+                Console.WriteLine($"Name: {product.ProductName}, Stock: {product.UnitsInStock}");
+            }
 
             #endregion
             #region Q3
