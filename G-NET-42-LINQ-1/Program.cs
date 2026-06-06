@@ -133,8 +133,17 @@ namespace G_NET_42_LINQ_1
             }
 
             #endregion
-            #region Q3
+            #region Q12
+            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
 
+            var sortedWords = Arr
+                .OrderBy(word => word.Length)
+                .ThenBy(word => word, StringComparer.OrdinalIgnoreCase);
+
+            foreach (var word in sortedWords)
+            {
+                Console.WriteLine(word);
+            }
             #endregion
             #region Q3
 
