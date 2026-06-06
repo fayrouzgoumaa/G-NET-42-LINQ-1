@@ -36,7 +36,14 @@ namespace G_NET_42_LINQ_1
             }
 
             #endregion
-            #region Q3
+            #region Q4
+            var productsBetween10And30 = Source.ProductList
+                 .Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30);
+
+            foreach (var product in productsBetween10And30)
+            {
+                Console.WriteLine($"Name: {product.ProductName}, Price: {product.UnitPrice}");
+            }
 
             #endregion
             #region Q3
