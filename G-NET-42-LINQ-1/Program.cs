@@ -119,7 +119,18 @@ namespace G_NET_42_LINQ_1
                 Console.WriteLine($"CustomerID: {order.CustomerID}, OrderDate: {order.OrderDate:d}");
             }
             #endregion
-            #region Q3
+            #region Q11
+            var result = Source.ProductList
+            .Select((p, index) => new
+            {
+                Position = index + 1,
+                ProductName = p.ProductName
+            });
+
+            foreach (var item in result)
+            {
+                Console.WriteLine($"{item.Position}. {item.ProductName}");
+            }
 
             #endregion
             #region Q3
