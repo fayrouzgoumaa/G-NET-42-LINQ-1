@@ -1,6 +1,7 @@
 ﻿using G_NET_42_LINQ_1.Models;
 using System.Linq;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace G_NET_42_LINQ_1
 {
     internal class Program
@@ -145,90 +146,23 @@ namespace G_NET_42_LINQ_1
                 Console.WriteLine(word);
             }
             #endregion
-            #region Q3
+            #region Q13
+            string[] digits =
+            {
+            "zero","one","two","three","four",
+            "five","six","seven","eight","nine"
+            };
 
-            #endregion
-            #region Q3
+            var Result = digits
+                .Where(d => d.Length > 1 && d[1] == 'i')
+                .Reverse();
 
+            foreach (var digit in  Result)
+            {
+                Console.WriteLine(digit);
+            }
             #endregion
-            #region Q3
 
-            #endregion
-            #region Q3
-
-            #endregion
-            #region Q3
-
-            #endregion
-            var#region Q3
-
-            #endregion
-                
-                #region Q3
-
-            #endregion
-            #region Q3
-
-            #endregion
-            #region Q3
-
-            #endregion
-            #region Q3
-
-            #endregion
-               
-                #region Q3
-
-            #endregion
-               
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
-                #region Q3
-
-            #endregion
 
         }
     }
