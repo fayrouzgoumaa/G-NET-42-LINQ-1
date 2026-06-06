@@ -103,8 +103,21 @@ namespace G_NET_42_LINQ_1
                 Console.WriteLine($"Name: {product.ProductName}, Stock: {product.UnitsInStock}");
             }
             #endregion
-            #region Q3
+            #region Q10
+            var ordersFrom1997 =
+                    from a in Source.CustomerList
+                    from i in a.Orders
+                    where i.OrderDate.Year >= 1997
+                    select new
+                    { a.CustomerID,
+                        i.OrderDate
+                    };
+            
 
+            foreach (var order in ordersFrom1997)
+            {
+                Console.WriteLine($"CustomerID: {order.CustomerID}, OrderDate: {order.OrderDate:d}");
+            }
             #endregion
             #region Q3
 
