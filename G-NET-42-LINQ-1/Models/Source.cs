@@ -1,12 +1,12 @@
 ﻿using G_NET_42_LINQ_1.Models;
-using LINQ_Day01_G01.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LINQ_Day01_G01.DataSource
+namespace G_NET_42_LINQ_1
 {
     public static class Source
     {

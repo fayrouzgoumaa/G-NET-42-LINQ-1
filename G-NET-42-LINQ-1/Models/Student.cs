@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LINQ_Day01_G01.Models
+namespace G_NET_42_LINQ_1.Models
 {
     public class Student
     {
