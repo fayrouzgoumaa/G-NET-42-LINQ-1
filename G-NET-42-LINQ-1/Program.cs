@@ -70,8 +70,18 @@ namespace G_NET_42_LINQ_1
                 Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, Status: {item.StockStatus}");
             }
             #endregion
-            #region Q3
+            #region Q7
+            var productsWithPosition = Source.ProductList
+                .Select((p, index) => new
+                {
+                    Position = index + 1,
+                    Name = p.ProductName
+                });
 
+            foreach (var item in productsWithPosition)
+            {
+                Console.WriteLine($"{item.Position}. {item.Name}");
+            }
             #endregion
             #region Q3
 
